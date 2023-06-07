@@ -1,0 +1,169 @@
+body {
+  background-color: rgb(214, 113, 18);
+  color: rgb(59, 8, 53);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  font-family: "Georgia", serif, blue;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: grey;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  padding: 8px 24px;
+  color: rgb(125, 4, 238);
+  text-decoration: none;
+}
+
+.nav-links-responsive {
+  position: absolute;
+  display: none;
+  background-color: rgba(20, 20, 20, 0.95);
+  width: 100%;
+  top: 70px;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links-responsive {
+    display: flex;
+  }
+}
+
+.image-container,
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+  /* Estilos para el footer */
+footer {
+  background-color: violet;
+  color: blue;
+  font-size: 18px;
+}
+
+/* Estilos para el botón en el footer */
+footer button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+footer button:hover {
+  background-color: orange;
+  color: white;
+}
+
+.services {
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service {
+  display: inline-block;
+  width: 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.service img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.service h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  margin-top: 5px;
+}
